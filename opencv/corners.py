@@ -21,3 +21,5 @@ for i in range(len(corners)):
 cv2.imshow("corner",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# Hi all
