@@ -1,0 +1,5 @@
+photo = cv2.imread("image.jpg")
+photo = cv2.resize(photo,(600,600))
+cv2.imshow("pv",photo)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
