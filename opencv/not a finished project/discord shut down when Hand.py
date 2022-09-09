@@ -39,7 +39,7 @@ while True:
                 imgWhite[:, wGap:wCal + wGap] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
                 if prediction:
-                    os.system("TASKKILL /F /IM discord.exe")
+                    os.system("TASKKILL /F /IM chrome.exe")
 
             else:
                 k = imgSize / w
@@ -50,7 +50,7 @@ while True:
                 imgWhite[hGap:hCal + hGap, :] = imgResize
                 prediction, index = classifier.getPrediction(imgWhite, draw=False)
                 if prediction:
-                    os.system("TASKKILL /F /IM discord.exe")
+                    os.system("TASKKILL /F /IM chrome.exe")
 
             cv2.imshow("ImageCrop", imgCrop)
             cv2.imshow("ImageWhite", imgWhite)
